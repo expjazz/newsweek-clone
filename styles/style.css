@@ -44,6 +44,7 @@
   color: var(--main-red);
   margin-left: 10px;
   padding: 0 20px;
+  margin-right: 10px;
 }
 
 .nav-left li:nth-child(2) svg {
@@ -54,11 +55,29 @@
   background: white;
   margin-top: 19px;
   height: 89px;
+  position: relative;
+  margin-top: 4px;
+  height: fit-content;
+  display: block;
+}
+
+.nav-col:after {
+  content: "";
+  position: absolute;
+  border-top: 15px solid var(--main-red);
+  border-left: 10px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+  width: 87px;
+  right: 0px;
+  top: -1px;
+  z-index: 99;
 }
 
 .nav-bottom {
   position: relative;
   width: 100%;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .nav-bottom ul {
@@ -70,9 +89,12 @@
 
 .nav-bottom ul li {
   flex-grow: 1;
-  border-right: 1px solid black;
+  border-right: 1px solid #d9d9d9;
   text-align: center;
-  height: 50px;
+}
+
+.nav-bottom .input-nav svg {
+  color: black;
 }
 
 .nav-bottom ul li a {
@@ -180,6 +202,11 @@
 
   .nav-right {
     display: block;
+    margin-left: 26px;
+  }
+
+  .nav-right .nav-right-text {
+    margin-left: 10px;
   }
 
   .nav-middle a svg {
