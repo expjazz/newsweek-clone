@@ -1,6 +1,7 @@
 :root {
   --main-red: #f72210;
   --main-gray: #a0a0a0;
+  --light-blue: #3581f4;
 }
 
 .container-max {
@@ -88,8 +89,9 @@
   margin-right: 4px;
 }
 
-.section-1 .column1 .item {
+.section-1 .item {
   border: none;
+  margin-bottom: 10px;
 }
 
 .section-1 .title-page {
@@ -104,11 +106,19 @@
   color: black;
 }
 
+.section-1 .item-sponsor .item-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 .section-1 .item .article-classification a {
   color: var(--main-red);
 }
 
-.section-1 .item .article-classification {
+.section-1 .item-sponsor .article-classification a {
+  color: var(--light-blue);
+}
+
+.section-1 .column1 .item .article-classification {
   display: block;
   text-transform: uppercase;
   padding: 8px 15px 9px;
@@ -119,6 +129,17 @@
   z-index: 1;
 }
 
-.section-1 .column1 .item .item-body {
+.section-1 .column2 .item .article-classification {
+  display: block;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 343px;
+  left: 0;
+  z-index: 1;
+}
+
+.section-1 .item .item-body {
   padding: 0 0.2rem;
 }
