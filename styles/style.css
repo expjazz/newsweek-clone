@@ -1,0 +1,39 @@
+:root {
+  --main-red: #f72210;
+}
+
+.top-nav {
+  background: var(--main-red);
+  color: white;
+}
+
+.nav-right img {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-right a,
+.nav-left a {
+  color: white;
+}
+
+.nav-middle a svg {
+  width: 300px;
+  fill: white;
+}
+
+.nav-left {
+  flex-direction: row;
+  color: white;
+}
+
+.nav-left li:nth-child(2) a {
+  background: white;
+  color: var(--main-red);
+  margin-left: 10px;
+  padding: 0 20px;
+}
+
+.nav-left li:nth-child(2) svg {
+  margin-left: 10px;
+}
