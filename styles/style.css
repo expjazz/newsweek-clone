@@ -9,6 +9,10 @@
   color: black !important;
 }
 
+.text-red {
+  color: var(--main-red);
+}
+
 .font-size-14 {
   font-size: 14px;
 }
@@ -151,7 +155,8 @@
   color: #373a3a;
 }
 
-.section-2 .article-classification {
+.section-2 .article-classification,
+.section-3 .article-classification {
   display: block;
   padding: 0px 4px 0px;
   background-color: #c2d4d7;
