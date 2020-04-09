@@ -2,10 +2,7 @@
   --main-red: #f72210;
   --main-gray: #a0a0a0;
   --light-blue: #3581f4;
-}
-
-.container-max {
-  padding: 0 20px;
+  --weak-gray: #bababa;
 }
 
 .font-size-14 {
@@ -19,7 +16,12 @@
   flex-wrap: wrap;
 }
 
-.nav-right img {
+.nav-left .navbar-brand svg {
+  width: 120px;
+  fill: white;
+}
+
+.nav-left img {
   height: 20px;
   width: 20px;
 }
@@ -29,17 +31,22 @@
   color: white;
 }
 
+.nav-middle {
+  order: 0;
+  display: none;
+}
+
 .nav-middle a svg {
-  width: 300px;
+  width: 200px;
   fill: white;
 }
 
-.nav-left {
+.nav-right {
   flex-direction: row;
   color: white;
 }
 
-.nav-left li:nth-child(2) a {
+.nav-right li:nth-child(2) a {
   background: white;
   color: var(--main-red);
   margin-left: 10px;
@@ -47,8 +54,12 @@
   margin-right: 10px;
 }
 
-.nav-left li:nth-child(2) svg {
+.nav-right li:nth-child(2) svg {
   margin-left: 10px;
+}
+
+.navbar .nav-left-text .navbar-text {
+  display: none;
 }
 
 .nav-col {
@@ -137,7 +148,7 @@
 }
 
 .section-1 .column2 .row .small-middle-col .item .item-body {
-  color: #bababa;
+  color: var(--weak-gray);
 }
 
 .section-1 .column2 .row > .small-middle-col .item .article-classification a {
@@ -191,26 +202,59 @@
   z-index: 1;
 }
 
+.section-1 .column2 .more-stories {
+  border-top: 1px solid var(--weak-gray);
+  padding-top: 15px;
+}
+
 .section-1 .item .item-body {
   padding: 0 0.2rem;
 }
 
 @media screen and (min-width: 992px) {
+  .container-max {
+    padding: 0 20px;
+  }
+
   .top-nav {
-    /* height: 182px; */
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    display: block;
+    margin-left: 26px;
+    order: 0;
+  }
+
+  .nav-left .navbar-brand {
+    display: none;
   }
 
   .nav-right {
-    display: block;
-    margin-left: 26px;
+    order: 0;
   }
 
-  .nav-right .nav-right-text {
+  .nav-middle {
+    order: 0;
+    display: block;
+  }
+
+  .nav-left .nav-left-text {
     margin-left: 10px;
   }
 
   .nav-middle a svg {
     width: 350px;
     fill: white;
+  }
+
+  .navbar .nav-left-text .navbar-text {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .nav-left .nav-link span {
+    display: none;
   }
 }
