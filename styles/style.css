@@ -5,6 +5,10 @@
   --weak-gray: #bababa;
 }
 
+.text-black {
+  color: black !important;
+}
+
 .font-size-14 {
   font-size: 14px;
 }
@@ -137,6 +141,17 @@
 }
 
 .section-1 .column2 .row .small-middle-col .item .article-classification {
+  display: block;
+  padding: 0px 4px 0px;
+  background-color: #c2d4d7;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  z-index: 1;
+  color: #373a3a;
+}
+
+.section-2 .article-classification {
   display: block;
   padding: 0px 4px 0px;
   background-color: #c2d4d7;
@@ -317,6 +332,52 @@
 
 .section-1 .newsletter .card-body button:hover {
   background: #999;
+}
+
+.middle-page-separator {
+  border-bottom: 1px solid var(--main-gray);
+}
+
+.middle-page-separator .span-logo {
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+    no-repeat #f72210;
+  display: flex;
+  height: 29px;
+  width: 51px;
+}
+
+.section-2 .card {
+  border: none;
+}
+
+.section-2 .in-the-mag-img .img-container {
+  display: block;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.section-2 .in-the-mag-img img {
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  max-width: inherit;
+}
+
+.section-2 .in-the-mag-img .card-body h6 {
+  margin-left: -20px;
+}
+
+.section-2 .in-the-mag-img .title span {
+  background: var(--main-red);
+  color: white;
+  padding: 7px 5px;
+}
+.section-2 .in-the-mag-img a {
+  color: var(--main-red);
 }
 
 @media screen and (min-width: 992px) {
