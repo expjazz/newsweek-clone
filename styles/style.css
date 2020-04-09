@@ -411,6 +411,10 @@
   left: 0;
 }
 
+.last-section {
+  border-bottom: none;
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
