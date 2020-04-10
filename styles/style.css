@@ -5,6 +5,22 @@
   --weak-gray: #bababa;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-white {
+  background: white;
+}
+
+.container-max {
+  background: #f4f5f6;
+}
+
+.container-fluid {
+  background: white;
+}
+
 .text-black {
   color: black !important;
 }
@@ -20,11 +36,11 @@
 .top-nav {
   background: var(--main-red);
   color: white;
-  padding: 0;
+  padding: 0 15px;
   flex-wrap: wrap;
 }
 
-.nav-left .navbar-brand svg {
+.nav-left .navbar-brand {
   width: 120px;
   fill: white;
 }
@@ -58,7 +74,7 @@
   background: white;
   color: var(--main-red);
   margin-left: 10px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin-right: 10px;
 }
 
@@ -144,7 +160,9 @@
   margin-bottom: 10px;
 }
 
-.section-1 .column2 .row .small-middle-col .item .article-classification {
+.section-1 .column2 .row .small-middle-col .item .article-classification,
+.section-1 .item .article-classification,
+.section-1-sm .card .blue {
   display: block;
   padding: 0px 4px 0px;
   background-color: #c2d4d7;
@@ -170,7 +188,7 @@
   color: var(--weak-gray);
 }
 
-.section-1 .column2 .row > .small-middle-col .item .article-classification a {
+.section-1 .small-middle-col .item .article-classification a {
   color: #373a3a;
   font-size: 11px;
 }
@@ -210,7 +228,7 @@
   z-index: 1;
 }
 
-.section-1 .column2 > .item .article-classification {
+.section-1 .item .title-p .article-classification {
   display: block;
   text-transform: uppercase;
   padding: 8px 15px 9px;
@@ -229,49 +247,49 @@
   padding: 0 0.2rem;
 }
 
-.section-1 .column3 .opinion-item-1 {
+.section-1 .opinion-item-1 {
   border-bottom: 1px solid var(--weak-gray);
   margin-top: 15px;
 }
 
-.section-1 .column3 .opinion-item-3 {
+.section-1 .opinion-item-3 {
   border-bottom: 1px solid var(--weak-gray);
   margin-top: 15px;
   padding-bottom: 10px;
 }
 
-.section-1 .column3 .opinion-item-1 .title,
-.section-1 .column3 .opinion-item-3 .title {
+.section-1 .opinion-item-1 .title,
+.section-1 .opinion-item-3 .title {
   color: black;
   font-size: 15px;
 }
 
-.section-1 .column3 .opinion-item-1 .sub-title {
+.section-1 .opinion-item-1 .sub-title {
   font-size: 15px;
 }
 
-.section-1 .column3 .opinion-item-2 .title {
+.section-1 .opinion-item-2 .title {
   color: black;
   font-size: 15px;
 }
 
-.section-1 .column3 .opinion-item-2 {
+.section-1 .opinion-item-2 {
   position: relative;
 }
 
-.section-1 .column3 .opinion-item-2-sub-item {
+.section-1 .opinion-item-2-sub-item {
   margin-top: 20px;
   position: relative;
 }
 
-.section-1 .column3 .opinion-item-2-sub-item p {
+.section-1 .opinion-item-2-sub-item p {
   position: relative;
   margin-top: 13px;
   border-top: 1px solid var(--weak-gray);
   width: 100%;
 }
 
-.section-1 .column3 .opinion-item-2-sub-item::before {
+.section-1 .opinion-item-2-sub-item::before {
   content: "";
   display: block;
   background-color: #d9d9d9;
@@ -283,14 +301,14 @@
   bottom: 0;
 }
 
-.section-1 .column3 .opinion-item-2-sub-item img {
+.section-1 .opinion-item-2-sub-item img {
   position: absolute;
   left: 77%;
   width: auto;
   height: 100%;
 }
 
-.section-1 .column3 .item .article-classification {
+.section-1 .item .article-classification {
   display: block;
   text-transform: uppercase;
   padding: 8px 15px 9px;
@@ -301,13 +319,13 @@
   z-index: 1;
 }
 
-.section-1 .column3 .newsletter {
+.section-1 .newsletter {
   max-width: 250px;
   border: 1px solid #e5e5e5;
   background-color: #f4f5f6;
 }
 
-.section-1 .column3 .newsletter a {
+.section-1 .newsletter a {
   color: #333;
 }
 
@@ -499,7 +517,7 @@ footer .footer-list {
   }
 }
 
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 661px) {
   .nav-left .nav-link span {
     display: none;
   }
@@ -512,5 +530,54 @@ footer .footer-list {
 
   .section-1-lg {
     display: none;
+  }
+
+  .container-fluid {
+    background: transparent;
+  }
+  .section-1 .title-page {
+    font-size: 16px;
+  }
+
+  .more-stories .media-body h5 {
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .more-stories .media-body p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 503px) {
+  .nav-right {
+    font-size: 12px;
+    align-items: baseline;
+  }
+
+  .nav-right li:nth-child(2) a {
+    padding: 0 1px;
+  }
+
+  .nav-right li:nth-child(2) a svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .nav-left li:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 377px) {
+  .top-nav {
+    width: 350px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-right {
+    font-size: 12px;
+    align-items: stretch;
+    white-space: nowrap;
   }
 }
