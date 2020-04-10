@@ -455,6 +455,10 @@
   .navbar .nav-left-text .navbar-text {
     display: inline-block;
   }
+
+  .padding-col-0 {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 652px) {
