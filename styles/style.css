@@ -434,6 +434,21 @@
     center center / cover no-repeat;
 }
 
+footer .footer-brand svg {
+  width: 240px;
+  fill: var(--main-red);
+}
+
+.footer .social-links svg {
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--main-gray);
+}
+
+footer .footer-list {
+  list-style: none;
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
