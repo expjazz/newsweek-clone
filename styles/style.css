@@ -449,6 +449,10 @@ footer .footer-list {
   list-style: none;
 }
 
+.section-1-sm {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
@@ -497,6 +501,16 @@ footer .footer-list {
 
 @media screen and (max-width: 652px) {
   .nav-left .nav-link span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .section-1-sm {
+    display: block;
+  }
+
+  .section-1-lg {
     display: none;
   }
 }
