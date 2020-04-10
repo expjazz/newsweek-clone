@@ -415,6 +415,25 @@
   border-bottom: none;
 }
 
+.section-6 .imgs {
+  width: 400px;
+}
+
+.section-6 .img-2 {
+  top: 21px;
+  left: 44px;
+}
+
+.section-6 .jumbotron {
+  background: #f4f5f6;
+  height: 330px;
+}
+
+.section-6 .item-2 .imgs {
+  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
+    center center / cover no-repeat;
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
