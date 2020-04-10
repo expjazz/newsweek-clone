@@ -20,11 +20,12 @@
   <body>
     <div class="container-max">
       <header class="header">
-        <nav class="navbar navbar-expand-lg align-items-end top-nav">
+        <nav class="navbar navbar-expand-lg align-items-end top-nav fixed-top">
           <ul class="navbar-nav flex-md-row flex-sm-row flex-row nav-left">
             <li class="nav-item">
               <a href="#" class="navbar-brand">
                 <svg
+                  class="navbar-brand-2"
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,6 +67,7 @@
           <div class="nav-middle justify-self-start">
             <a href="#" class="navbar-brand">
               <svg
+                id="logo"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -3401,19 +3403,27 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      var num = 101; //number of pixels before modifying styles
+    <script>
+      var num = 50; //number of pixels before modifying styles
 
       $(window).bind("scroll", function () {
         if ($(window).scrollTop() > num) {
-          $(".nav-bottom").addClass("d-none");
           $(".top-nav").addClass("fixed-top");
-          $(".navbar-brand").addClass("fill-svg");
+          $(".container-fluid").addClass("margin-top");
+          $(".nav-middle").addClass("d-none");
+          $(".nav-left").addClass("d-flex");
+
+          $(".navbar").removeClass("navbar-expand-lg");
         } else {
+          $(".navbar").addClass("navbar-expand-lg");
+
           $(".nav-bottom").removeClass("d-none");
+          $(".nav-middle").removeClass("d-none");
           $(".top-nav").removeClass("fixed-top");
+          $(".container-fluid").removeClass("margin-top");
+          $(".navbar-nav").removeClass("d-flex");
         }
       });
-    </script> -->
+    </script>
   </body>
 </html>

@@ -36,7 +36,6 @@ body {
 .top-nav {
   background: var(--main-red);
   color: white;
-  padding: 0 15px;
   flex-wrap: wrap;
 }
 
@@ -469,6 +468,16 @@ footer .footer-list {
 
 .section-1-sm {
   display: none;
+}
+
+.margin-top {
+  margin-top: 130px;
+}
+
+.nav-left-java {
+  display: block;
+  margin-left: 26px;
+  order: 0;
 }
 
 @media screen and (min-width: 992px) {
