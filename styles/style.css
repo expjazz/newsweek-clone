@@ -13,6 +13,10 @@ body {
   background: white;
 }
 
+.wft {
+  width: fit-content !important;
+}
+
 .container-max {
   background: #f4f5f6;
 }
@@ -169,6 +173,7 @@ body {
   left: 0;
   z-index: 1;
   color: #373a3a;
+  font-size: 12px;
 }
 
 .section-2 .article-classification,
@@ -443,7 +448,7 @@ body {
 
 .section-6 .jumbotron {
   background: #f4f5f6;
-  height: 330px;
+  height: fit-content;
 }
 
 .section-6 .item-2 .imgs {
@@ -556,6 +561,18 @@ footer .footer-list {
 
   .more-stories .media-body p {
     font-size: 13px;
+  }
+  .section-6 .jumbotron {
+    height: fit-content;
+  }
+
+  .section-6 .imgs {
+    height: 278px;
+    width: unset;
+  }
+
+  .section-6 #imgs-2 {
+    height: 200px !important;
   }
 }
 
