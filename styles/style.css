@@ -9,6 +9,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body p {
+  color: black;
+}
+
+.nav-right a,
+.nav-left a {
+  color: white;
+}
+
 body a:hover {
   color: var(--main-red) !important;
   text-decoration: underline !important;
@@ -42,6 +51,10 @@ body a:hover {
   font-size: 14px;
 }
 
+.bordertop2 {
+  border-width: 4px !important;
+}
+
 .top-nav {
   background: var(--main-red);
   color: white;
@@ -56,11 +69,6 @@ body a:hover {
 .nav-left img {
   height: 20px;
   width: 20px;
-}
-
-.nav-right a,
-.nav-left a {
-  color: white;
 }
 
 .nav-middle {
@@ -78,12 +86,43 @@ body a:hover {
   color: white;
 }
 
+.nav-bottom ul li a {
+  color: black;
+}
+
+.section-2 .in-the-mag-img a {
+  color: var(--main-red);
+}
+
+.section-1 .newsletter a {
+  color: #333;
+}
+
+.section-1 .item a {
+  color: black;
+}
+
 .nav-right li:nth-child(2) a {
   background: white;
   color: var(--main-red);
   margin-left: 10px;
   padding: 0 10px;
   margin-right: 10px;
+}
+
+footer .footer-brand svg {
+  width: 240px;
+  fill: var(--main-red);
+}
+
+.footer .social-links svg {
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--main-gray);
+}
+
+.nav-bottom .input-nav svg {
+  color: black;
 }
 
 .nav-right li:nth-child(2) svg {
@@ -96,23 +135,19 @@ body a:hover {
 
 .nav-col {
   background: white;
-  margin-top: 19px;
-  height: 89px;
   position: relative;
   margin-top: 4px;
   height: fit-content;
   display: block;
 }
 
-.nav-col:after {
+.nav-col::after {
   content: "";
   position: absolute;
   border-top: 15px solid var(--main-red);
   border-left: 10px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0;
   width: 87px;
-  right: 0px;
+  right: 0;
   top: -1px;
   z-index: 99;
 }
@@ -134,14 +169,6 @@ body a:hover {
   flex-grow: 1;
   border-right: 1px solid #d9d9d9;
   text-align: center;
-}
-
-.nav-bottom .input-nav svg {
-  color: black;
-}
-
-.nav-bottom ul li a {
-  color: black;
 }
 
 .nav-bottom ul li a:hover {
@@ -168,23 +195,10 @@ body a:hover {
   margin-bottom: 10px;
 }
 
-.section-1 .column2 .row .small-middle-col .item .article-classification,
-.section-1 .item .article-classification,
-.section-1-sm .card .blue {
-  display: block;
-  padding: 0px 4px 0px;
-  background-color: #c2d4d7;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  color: #373a3a;
-  font-size: 12px;
-}
-
 .section-2 .article-classification,
 .section-3 .article-classification {
   display: block;
-  padding: 0px 4px 0px;
+  padding: 0 4px 0;
   background-color: #c2d4d7;
   position: absolute;
   bottom: 0;
@@ -193,37 +207,17 @@ body a:hover {
   color: #373a3a;
 }
 
-.section-1 .column2 .row .small-middle-col .item .item-body {
-  color: var(--weak-gray);
-}
-
-.section-1 .small-middle-col .item .article-classification a {
+.section-1 .item .article-classification {
+  display: block;
+  background-color: #c2d4d7;
   color: #373a3a;
-  font-size: 11px;
-}
-
-.section-1 .title-page {
-  color: var(--main-gray);
-}
-
-.section-1 .item img {
-  position: relative;
-}
-
-.section-1 .item a {
-  color: black;
-}
-
-.section-1 .item-sponsor .item-body {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.section-1 .item .article-classification a {
-  color: var(--main-red);
-}
-
-.section-1 .item-sponsor .article-classification a {
-  color: var(--light-blue);
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .section-1 .column1 .item .article-classification {
@@ -247,13 +241,54 @@ body a:hover {
   z-index: 1;
 }
 
-.section-1 .column2 .more-stories {
-  border-top: 1px solid var(--weak-gray);
-  padding-top: 15px;
+.section-1 .column2 .row .small-middle-col .item .article-classification,
+.section-1-sm .card .blue {
+  display: block;
+  padding: 0 4px 0;
+  background-color: #c2d4d7;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  color: #373a3a;
+  font-size: 12px;
 }
 
 .section-1 .item .item-body {
   padding: 0 0.2rem;
+}
+
+.section-1 .item-sponsor .item-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.section-1 .column2 .row .small-middle-col .item .item-body {
+  color: var(--weak-gray);
+}
+
+.section-1 .item-sponsor .article-classification a {
+  color: var(--light-blue);
+}
+
+.section-1 .item .article-classification a {
+  color: var(--main-red);
+}
+
+.section-1 .small-middle-col .item .article-classification a {
+  color: #373a3a;
+  font-size: 11px;
+}
+
+.section-1 .title-page {
+  color: var(--main-gray);
+}
+
+.section-1 .item img {
+  position: relative;
+}
+
+.section-1 .column2 .more-stories {
+  border-top: 1px solid var(--weak-gray);
+  padding-top: 15px;
 }
 
 .section-1 .opinion-item-1 {
@@ -317,29 +352,15 @@ body a:hover {
   height: 100%;
 }
 
-.section-1 .item .article-classification {
-  display: block;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .section-1 .newsletter {
   max-width: 250px;
   border: 1px solid #e5e5e5;
   background-color: #f4f5f6;
 }
 
-.section-1 .newsletter a {
-  color: #333;
-}
-
 .section-1 .column3 .newsletter span {
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   display: flex;
   height: 29px;
@@ -369,11 +390,11 @@ body a:hover {
 }
 
 .middle-page-separator .span-logo {
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
-  display: flex;
   height: 29px;
-  width: 51px;
+  width: 29px;
 }
 
 .section-2 .card {
@@ -406,15 +427,12 @@ body a:hover {
   color: white;
   padding: 7px 5px;
 }
-.section-2 .in-the-mag-img a {
-  color: var(--main-red);
-}
 
 .section-3 .item .card-body {
   height: 200px;
 }
 
-.logo-slideshow:after {
+.logo-slideshow::after {
   border-bottom: 3px solid red;
   border-right: 3px solid red;
   display: block;
@@ -431,7 +449,8 @@ body a:hover {
   line-height: 58px;
   text-indent: 5px;
   text-align: center;
-  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
+  background:
+    url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
     0 0 / contain no-repeat;
   color: #e9212e;
   bottom: 0;
@@ -457,19 +476,9 @@ body a:hover {
 }
 
 .section-6 .item-2 .imgs {
-  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
+  background:
+    url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
     center center / cover no-repeat;
-}
-
-footer .footer-brand svg {
-  width: 240px;
-  fill: var(--main-red);
-}
-
-.footer .social-links svg {
-  font-size: 25px;
-  margin-left: 10px;
-  color: var(--main-gray);
 }
 
 footer .footer-list {
@@ -483,12 +492,6 @@ footer .footer-list {
 .margin-top {
   margin-top: 130px;
 }
-/* 
-.nav-left-java {
-  display: block;
-  margin-left: 26px;
-  order: 0;
-} */
 
 .fixed-scroll2 {
   position: fixed;
@@ -498,6 +501,14 @@ footer .footer-list {
 .fixed-scroll3 {
   position: fixed;
   right: 0;
+}
+
+.section-6 #imgs-2 {
+  width: 100% !important;
+}
+
+.section-6 .w-50 {
+  width: unset !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -564,6 +575,7 @@ footer .footer-list {
   .container-fluid {
     background: transparent;
   }
+
   .section-1 .title-page {
     font-size: 16px;
   }
@@ -577,6 +589,7 @@ footer .footer-list {
   .more-stories .media-body p {
     font-size: 13px;
   }
+
   .section-6 .jumbotron {
     height: fit-content;
   }
@@ -587,6 +600,7 @@ footer .footer-list {
 
   .section-6 #imgs-2 {
     height: 200px !important;
+    width: 100% !important;
   }
 }
 
@@ -604,11 +618,13 @@ footer .footer-list {
     display: none;
   }
 }
+
 @media screen and (max-width: 426px) {
   .nav-left li:nth-child(2) {
     display: none;
   }
 }
+
 @media screen and (max-width: 377px) {
   .top-nav {
     width: 350px;
