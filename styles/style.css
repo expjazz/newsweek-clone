@@ -9,6 +9,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body a:hover {
+  color: var(--main-red) !important;
+  text-decoration: underline !important;
+}
+
 .bg-white {
   background: white;
 }
