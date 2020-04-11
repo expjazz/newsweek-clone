@@ -490,6 +490,16 @@ footer .footer-list {
   order: 0;
 } */
 
+.fixed-scroll2 {
+  position: fixed;
+  right: 24%;
+}
+
+.fixed-scroll3 {
+  position: fixed;
+  right: 0;
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
@@ -503,10 +513,6 @@ footer .footer-list {
     display: block;
     margin-left: 26px;
     order: 0;
-  }
-
-  .nav-left .navbar-brand {
-    display: none;
   }
 
   .nav-right {
