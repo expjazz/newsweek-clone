@@ -478,12 +478,12 @@ footer .footer-list {
 .margin-top {
   margin-top: 130px;
 }
-
+/* 
 .nav-left-java {
   display: block;
   margin-left: 26px;
   order: 0;
-}
+} */
 
 @media screen and (min-width: 992px) {
   .container-max {
@@ -528,6 +528,10 @@ footer .footer-list {
 
   .padding-col-0 {
     padding: 0;
+  }
+
+  .jumb-h {
+    min-height: 300px !important;
   }
 }
 
