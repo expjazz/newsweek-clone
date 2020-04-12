@@ -23,6 +23,11 @@ body a:hover {
   text-decoration: underline !important;
 }
 
+footer a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 .bg-white {
   background: white;
 }
@@ -117,7 +122,6 @@ footer .footer-brand svg {
 
 .footer .social-links svg {
   font-size: 25px;
-  margin-left: 10px;
   color: var(--main-gray);
 }
 
@@ -211,31 +215,10 @@ footer .footer-brand svg {
   display: block;
   background-color: #c2d4d7;
   color: #373a3a;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   padding: 8px 15px 9px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.section-1 .column1 .item .article-classification {
-  display: block;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.section-1 .item .title-p .article-classification {
-  display: block;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, 0.9);
   bottom: 0;
   left: 0;
   z-index: 1;
@@ -511,6 +494,10 @@ footer .footer-list {
   width: unset !important;
 }
 
+.section-6 .btn {
+  background: var(--main-red);
+}
+
 @media screen and (min-width: 992px) {
   .container-max {
     padding: 0 20px;
@@ -555,11 +542,31 @@ footer .footer-list {
   .jumb-h {
     min-height: 300px !important;
   }
+
+  .section-6 .j-cont {
+    height: 100% !important;
+  }
+
+  .section-6 #imgs-2 {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .section-6 .item-2 {
+    height: 75% !important;
+  }
 }
 
 @media screen and (max-width: 661px) {
   .nav-left .nav-link span {
     display: none;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .section-6 #imgs-2 {
+    height: 200px !important;
+    width: 100% !important;
   }
 }
 
@@ -601,6 +608,14 @@ footer .footer-list {
   .section-6 #imgs-2 {
     height: 200px !important;
     width: 100% !important;
+  }
+
+  .margin-top {
+    margin-top: 91px;
+  }
+
+  footer .row ul li {
+    border: none !important;
   }
 }
 

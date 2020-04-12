@@ -16,14 +16,14 @@
     <title>Newsweek clone</title>
   </head>
   <body>
-    <div class="container-max px-md-0 px-xl-4 px-lg-0">
+    <div class="container-max px-sm-0 px-md-0 px-xl-4 px-lg-0">
       <header class="header">
-        <nav class="navbar navbar-expand-lg align-items-end top-nav px-0 pb-0">
+        <nav class="navbar navbar-expand-lg align-items-end top-nav pr-0 pb-0 py-0 px-lg-0">
           <ul class="navbar-nav flex-md-row flex-sm-row flex-row nav-left">
             <li class="nav-item">
               <a href="#" class="navbar-brand2 navbar-brand d-lg-none">
                 <svg
-                  class="navbar-brand-2"
+                  class="navbar-brand-2 mt-n1"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -83,7 +83,7 @@
               </svg>
             </a>
           </div>
-          <ul class="navbar-nav nav-right">
+          <ul class="navbar-nav nav-right my-auto">
             <li class="nav-item">
               <a href="#" class="nav-link font-weight-bold">SIGN IN</a>
             </li>
@@ -92,14 +92,14 @@
                 >SUBSCRIBE <i class="fas fa-chevron-right"></i
               ></a>
             </li>
-            <li>
+            <li class="my-auto">
               <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarToggler"
               >
-                <span class="navbar-toggler-icon"
+                <span class="navbar-toggler-icon mb-n2 text-secondary"
                   ><i class="fas fa-bars"></i
                 ></span>
               </button>
@@ -132,9 +132,9 @@
           </div>
         </nav>
       </header>
-      <div class="container-fluid px-4">
+      <div class="container-fluid px-3 px-md-4">
         <main class="section-1-sm section-1">
-          <div class="row bg-white">
+          <div class="row bg-white pt-3">
             <div class="col-12 mx-auto">
               <h6 class="title-page font-weight-bold">TOP STORY</h6>
               <div class="card item sm-item-1">
@@ -3261,7 +3261,7 @@
                       />
                     </div>
                   </div>
-                  <div class="right ml-lg-3">
+                  <div class="right ml-lg-3 text-center">
                     <h5 class="font-weight-bold text-black">
                       In-depth Stories You Don't See Elsewhere About Topics You
                       Want to Read!
@@ -3273,7 +3273,7 @@
                     <p class="lead mt-4">
                       <a
                         href=""
-                        class="btn btn-primary btn-lg red bg-danger rounded-0 border-danger"
+                        class="btn btn-primary btn-lg red rounded-0 border-danger"
                         role="button"
                         >SUBSCRIBE <i class="fas fa-chevron-right"></i
                       ></a>
@@ -3288,12 +3288,12 @@
               >
                 NEWSLETTER
               </h4>
-              <div class="col-12 h-75 p-0 card item-2">
-                <div class="j-cont h-100 d-flex flex-column flex-md-row">
-                  <div class="imgs d-flex mr-md-5 w-50 h-100" id="imgs-2">
+              <div class="col-12 p-0 item-2">
+                <div class="j-cont d-flex flex-column flex-md-row border">
+                  <div class="imgs d-flex mr-md-5 w-50" id="imgs-2">
                     <div class="img-1"></div>
                   </div>
-                  <div class="right w-50 text-center card-body mx-auto">
+                  <div class="right w-50 text-center">
                     <h5 class="font-weight-bold text-black">
                       The Starting 5
                     </h5>
@@ -3304,7 +3304,7 @@
                     <p class="lead mt-4">
                       <a
                         href=""
-                        class="btn btn-primary btn-lg red bg-danger rounded-0 border-danger"
+                        class="btn btn-primary btn-lg red rounded-0 border-danger"
                         role="button"
                         >SIGN UP <i class="fas fa-chevron-right"></i
                       ></a>
@@ -3315,10 +3315,10 @@
             </div>
           </div>
         </section>
-        <footer class="footer">
+        <footer class="footer bg-white mt-n5 mx-n3 px-3">
           <div class="container-fluid">
-            <div class="row justify-content-between border-bottom pb-2">
-              <div class="footer-logo">
+            <div class="row d-sm-block flex-column flex-md-row d-md-flex justify-content-between border-bottom pb-2">
+              <div class="footer-logo d-md-flex">
                 <a href="#" class="footer-brand">
                   <svg
                     version="1.1"
@@ -3338,13 +3338,16 @@
                     </g>
                   </svg>
                 </a>
+                <small class="text-muted align-self-end my-sm-3 my-3 mb-md-n1 d-block">© 2020 NEWSWEEK
+
+                </small>
               </div>
-              <div class="social-links">
-                <a href="# "><i class="fab fa-facebook-f" id="facebook"></i></a>
-                <a href="# "><i class="fab fa-twitter"></i></a>
-                <a href="# "><i class="fab fa-instagram"></i></a>
-                <a href="# "><i class="fab fa-tumblr"></i></a>
-                <a href="# "><i class="fab fa-linkedin"></i></a>
+              <div class="social-links mb-md-n3 align-bottom">
+                <a href="#" class="align-text-top" ><i class="fab mr-2 align-text-top fa-facebook-square" id="facebook"></i></a>
+                <a href="# " class="align-text-top"><i class="fab mr-2 align-text-top fa-twitter"></i></a>
+                <a href="# " class="align-text-top"><i class="fab mr-2 align-text-top fa-instagram"></i></a>
+                <a href="# " class="align-text-top"><i class="fab mr-2 align-text-top fa-tumblr"></i></a>
+                <a href="# " class="align-text-top"><i class="fab mr-2 align-text-top fa-linkedin-in"></i></a>
               </div>
             </div>
             <div class="row editions">
@@ -3371,55 +3374,55 @@
               <ul
                 class="d-flex p-0 flex-wrap footer-list justify-content-start"
               >
-                <li class="pr-3 border-right">
+                <li class="pr-3 pl-0 ml-0 border-right">
                   <a href="#"><small class="text-muted"> About Us </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3 border-right">
                   <a href="#"><small class="text-muted">Corrections </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"><small class="text-muted">Contact Us </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Editorial Guidelines </small></a
                   >
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"><small class="text-muted">Advertise </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 border-right">
                   <a href="#"><small class="text-muted">Copyright </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Terms & Conditions </small></a
                   >
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Privacy Policy </small></a
                   >
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Cookie Policy </small></a
                   >
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Terms of Sale </small></a
                   >
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"><small class="text-muted">Archive </small></a>
                 </li>
-                <li class="px-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Announcements </small></a
                   >
                 </li>
-                <li class="pr-3 border-right">
+                <li class="px-md-3 pl-0 pr-3  border-right">
                   <a href="#"
                     ><small class="text-muted">Consent preferences </small></a
                   >
