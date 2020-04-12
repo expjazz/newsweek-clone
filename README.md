@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/expjazz/newsweek-clone/mainpage/index.html)
+[Live Demo Link](https://rawcdn.githack.com/expjazz/newsweek-clone/cd68f40cb9c6755986654e1b9111ba041764d49c/index.html)
 
 ## Getting Started
 
