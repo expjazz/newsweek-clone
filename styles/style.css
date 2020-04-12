@@ -498,7 +498,7 @@ footer .footer-list {
   background: var(--main-red);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
   .container-max {
     padding: 0 20px;
   }
